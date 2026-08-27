@@ -445,19 +445,19 @@ let selectedAnswers = {};
                 const feedback = document.getElementById(`feedback-${question.id}`);
                 feedback.classList.add('visible');
 
-                const correctAnswers = {
-                    1: "C) Reduce the likelihood of conflict and overall systemic risks in the environment.",
-                    2: "A) The model appears to follow safety guidelines during training but pursues different goals after deployment.",
-                    3: "A) Agents over-optimize fault metrics, producing outcomes misaligned with true human values.",
-                    4: "B) Power and resources help them pursue their goals more effectively.",
-                    5: "B) A system behaving differently once sufficiently capable.",
-                    6: "C) Use multiple layers of defense so that individual weaknesses are compensated by others.",
-                    7: "A) Autonomous weapons targeting humans with high precision, C) Lowering the barriers to large-scale violence, D) Autonomous retaliation systems increasing the risk of rapid escalation",
-                    8: "A) Eroded Epistemics, B) Enfeeblement, C) Deceptive Alignment",
-                    9: "A) Improving agents’ robustness to withstand hazards, B) Identifying and mitigating hazards before they cause harm, D) Reducing the severity of inherent model vulnerabilities",
-                    10: "D) Enfeeblement.",
-                    11: "A) High vulnerability, high hazard exposure, high hazard severity.",
-                    12: "D) AI competition may push to speed up development while giving up oversight."
+        const correctAnswers = {
+                    1: "B) Outlier events that often have extreme and unpredictable impacts.",
+                    2: "B) Closed-ended Questions, D) Conscious Ignorance",
+                    3: "C) Covariate shift",
+                    4: "B) The phenomenon where adversarial examples crafted for one model also fool another model.",
+                    5: "B) It can significantly reduce the accuracy on clean examples.",
+                    6: "A) Human-in-the-loop evaluation is expensive and time-consuming, D) Human judgments are noisy and miscalibrated",
+                    7: "A) RLHF without the reward model",
+                    8: "C) Collecting demonstration data and training a supervised policy.",
+                    9: "D) It only allows auditors to query the system and observe outputs.",
+                    10: "B) The policy model from diverging too far from the initial pretrained model.",
+                    11: "C) Mediocristan is the tyranny of the collective, D) Extremistan’s impact is potentially scalable",
+                    12: "A) Idea * student * resources * time"
                 };
                 document.getElementById(`correct-answer-${question.id}`).textContent =
                     `Correct Answer: ${correctAnswers[question.id]}`;
